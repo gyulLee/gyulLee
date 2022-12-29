@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             *{
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            #grid {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            .ggrid {margin-left:100px;}
+        </style>
+        <center>
+            <img src="./img/logo.png" width="300" height="200" class="pic">
+        </center>
+        <a href="./hw06.html" target="_top" title="클릭하세요!"><img src="./img/home_icon.png" width="300" height="50" class="pic"></a>
+    </head>
+    <hr align="center" width = 100%></hr>
+    <body>
+        <h1 align="center">Event</h1> <br><br>
+        <div id="grid">
+            <ul>
+                <a href="./doll.html" target="if_a">
+                    <li>구매고객 전원 키링 증정 이벤트</li>
+                </a>
+                <a href="./sale.html" target="if_a">
+                    <li>베스트 아이템 세일 이벤트</li>
+                </a>
+                <a href="./review.html" target="if_a">
+                    <li>고객 감사 리뷰 이벤트</li>
+                </a>    
+            </ul>
+            <div class="ggrid">
+                <iframe src="./basic.html" name="if_a" frameborder="0"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
