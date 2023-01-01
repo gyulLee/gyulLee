@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+            #active {
+                color: red;
+            }
+            .saw {color:gray;}
+            *{
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }    
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            h1{
+                font-size: 45px;
+                text-align: center;
+                border-bottom: 1px solid gray;
+                padding: 10px;
+                margin-bottom:0px;
+            }
+            /*grid 밑에 ul임을 명확하게 명시하기*/
+            #grid ul {
+                border-right: 1px solid gray;
+                padding-right: 20px;
+                margin: 0;
+                width:300px;
+            }
+            #grid {
+                display: grid;
+                grid-template-columns: 300px 1fr;
+            }
+            iframe {
+                padding-left: 200px;
+                width:900px;  
+                height:900px;
+            }
+        </style>
+        
+        
+    </head>
+
+    <body>
+        <h1 align="center">Event</h1>
+        <div id="grid">
+            <ul>
+                <a href="./doll.html" target="if_a"><li>구매고객 전원 키링 증정 이벤트</li></a>
+                <li><a href="./sale.html" target="if_a">베스트 아이템 세일 이벤트</a></li>
+                <li><a href="./review.html" target="if_a">고객 감사 리뷰 이벤트</a></li>
+                    
+            </ul>
+            <div>
+            <iframe src="./basic.html" name="if_a" frameborder="0"></iframe>
+            </div>
+        </div>
+            
+    </body>
+</html>
