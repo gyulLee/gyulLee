@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #bs {
+            border: 1px solid rgb(241, 243, 238);
+            box-shadow: 0px 0px 20px 10px rgb(246, 231, 69);
+            width: 250px;
+            height: 300px;
+        }
+
+        .yllw {
+            color: rgb(218, 190, 121);
+        }
+
+        #columns {
+            column-width: 300px;
+            display: inline;
+            padding-left: 530px;
+        }
+
+        #columns figure {
+            /*이미지랑 캡션이 붙어다니게 하는 코드*/
+            display: inline-block;
+            margin: 0px;
+            margin-bottom: 15px;
+
+            padding: 10px;
+        }
+
+        #columns figure figcaption {
+            /*설명에 테두리 만드는 법*/
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        /*이미지가 잘려서 안나오는 것을 방지하기 위함*/
+        #columns figure img {
+            width: 100%;
+            width: 250px;
+            height: 300px;
+        }
+    </style>
+
+    <h1 align="center">Best items</h1>
+    <p align="center">올 한 해를 뜨겁게 달군!</p>
+    <p class="yllw" align="center">노란색 아이템은 이벤트 중인 상품입니다.<br><br><br><br><br><br></p>
+</head>
+
+<body>
+    <section>
+        <center class="title2">
+            <h2 id="review">popular products with many reviews</h2>
+        </center>
+        <div id="columns">
+            <figure>
+                <img src="./img/갈비탕.PNG">
+                <figcaption>홍길동 셰프의 갈비탕<br>13900원</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/닭가슴살.PNG" id="bs">
+                <figcaption>큐브 닭가슴살 스테이크<br>8500원</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/밤.PNG" id="bs">
+                <figcaption>밤 2KG<br>18970원</figcaption>
+            </figure>
+        </div>
+    </section><br><br><br><br><br><br>
+    <section>
+        <center class="title2">
+            <h2 id="best">Best items</h2>
+        </center>
+        <div id="columns">
+            <figure>
+                <img src="./img/샐러드.PNG" id="bs">
+                <figcaption>하루 샐러드<br>3900원~</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/쌀국수.PNG" id="bs">
+                <figcaption>미슐랭 쌀국수<br>7000원</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/짜장.PNG" id="bs">
+                <figcaption>이하늘 셰프의 짜장면<br>10000원</figcaption>
+            </figure>
+        </div>
+    </section><br><br><br><br><br><br>
+    <section>
+        <center class="title2">
+            <h2 id="winter">겨울 간식</h2>
+        </center>
+        <div id="columns">
+            <figure>
+                <img src="./img/고구마.jpg">
+                <figcaption>꿀고구마 3KG<br>14900원</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/호두과자.PNG">
+                <figcaption>우리쌀 호두과자(냉동)<br>8900원</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/어묵탕.jpg">
+                <figcaption>엄마표 어묵탕<br>13000원</figcaption>
+            </figure>
+        </div>
+    </section><br><br><br><br><br><br>
+</body><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</html>
