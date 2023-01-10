@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../jquery-3.6.3.js"></script>
+    <style>
+        * {
+            font-family: 'Material Icons';
+        }
+
+        .kor {
+            border: 2px gray solid;
+            column-count: 3;
+            text-align: justify;
+            column-width: 200px;
+            column-gap: 20px;
+            /*column-rule-style: solid; dashed; dotted;*/
+            column-rule-style: solid;
+            column-rule-width: 2px;
+            column-rule-color: gray;
+            background-color: rgb(210, 189, 189);
+            box-shadow: 20px 20px 30px -20px maroon;
+        }
+
+        .eng {
+            border: 2px gray solid;
+            column-count: 3;
+            text-align: justify;
+            column-width: 200px;
+            column-gap: 20px;
+            /*column-rule-style: solid; dashed; dotted;*/
+            column-rule-style: solid;
+            column-rule-width: 2px;
+            column-rule-color: gray;
+            background-color: rgb(210, 189, 189);
+            box-shadow: 20px 20px 30px -20px maroon;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: gray;
+        }
+        button {
+            border-radius: 5px;
+        }
+        .korbtn {
+            border:none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("button.eng_hide, button.engbtn, div.eng").hide();
+            $("button.kor_hide").click(function () {
+                $("div.kor").hide();
+                $("div.eng").show();
+                $("button.kor_hide,button.korbtn").hide();
+                $("button.eng_hide,button.engbtn").show();
+            });
+            $("button.eng_hide").click(function () {
+                $("div.eng").hide();
+                $("div.kor").show();
+                $("button.eng_hide,button.engbtn").hide();
+                $("button.kor_hide,button.korbtn").show();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <span style="margin-left:100px">
+        <a href="../hw12.html" style="text-decoration: none; color:black;">home</a> > About us > Brand story
+    </span>
+    <h2 style="margin-left:105px">the efficacy of yogurt</h2>
+    <button style="margin-left: 105px; margin-bottom: 10px; border: none; background-color:antiquewhite" 
+    class="kor_hide">
+        translate into Eng</button>
+    <button class="korbtn" onclick="alert('영어로 번역하려면 누르시오')">도움말</button>
+
+
+    <button style="margin-left: 105px; margin-bottom: 10px; border: none; background-color:antiquewhite" 
+    class="eng_hide">
+        translate into Kor</button>
+    <button class="engbtn" onclick="alert('한국어로 번역하려면 누르시오')">도움말</button>
+
+
+    <center>
+        <div class="kor" style="width:86%">
+            올리브 오일과 함께 건강 식품으로 널리 사랑받고 있는 그릭 요거트. 인공감미료나 설탕 함유량이 상대적으로 적어 일반 요거트에 비해
+            맛은 떨어지지만, 칼슘과 단백질은 되려 풍부해 건강을 중시하는 사람들에게 각광받고 있다.
+            최근에는 지속가능한 다이어트를 추구하는 다이어터들에게 없어선 안될 식품 중 하나로 자리잡는 모양새다.
+            그렇다면 단백질 등 그릭 요거트 속 성분들은 우리에게 구체적으로 어떤 도움을 주는 걸까? 그릭 요거트를 꾸준히 섭취했을 때 취할 수 있는 건강상
+            이득 3가지를 함께 알아보자.
+            <ul>
+                <li>
+                    <strong>1. 체중 조절</strong><br>
+                    영양학자 등 전문가들은 그릭 요거트의 섭취가 체중 감량에 도움이 된다고 지적한다. 단백질 함량이 높은 그릭 요거트를
+                    주기적으로 섭취하면 포만감 지속 시간도 길어져 군것질을 하거나 폭식을 할
+                    위험이 줄어든다는 이유에서다. 그릭 요거트가 ‘건강한 다이어트’를 표방하는 사람들에게 널리 사랑받는 이유도 이 때문이다.
+                </li>
+                <li>
+                    <strong>2. 장 건강을 통한 면역력 증대</strong><br>
+                    그릭 요거트에는 장의 전반적인 활동을 돕는 박테리아인 프로바이오틱스가 다량 함유돼 있다. 따라서 그릭 요거트를 지속적으로
+                    섭취할 경우 소화가 원활해 지는 것은 물론 면역력 증대와
+                    불면증 완화 효과까지 누릴 수 있다. 꾸준한 섭취시 기분 향상과 피부 건강 증대에도 도움이 된다는 주장도 있다.
+                </li>
+                <li>
+                    <strong>3. 신체 회복</strong><br>
+                    격한 운동으로 탈진한 근육을 회복하는 과정에도 그릭 요거트가 도움을 줄 수 있다. 그릭 요거트 속 단백질의 아미노산이
+                    손상된 근육 조직을 재건하고 새로운 근육 세포를 만드는 것을 돕는 까닭이다.
+                    따라서 고강도 운동을 한 날에는 그릭 요거트를 식단에 추가하는 것이 도움이 된다.
+                </li>
+            </ul>
+        </div>
+        <div class="eng" style="width:86%">
+            Greek yogurt, which is widely loved as a health food along with olive oil. Compared to regular yogurt,
+            artificial sweeteners and sugar content are relatively low.
+            Although the taste is poor, it is rich in calcium and protein, attracting people who value health.
+            Recently, it seems to have become one of the indispensable foods for dieters seeking a sustainable diet.
+            Then, how do the ingredients in Greek yogurt, such as protein, specifically help us? The health benefits of
+            eating Greek yogurt consistently.
+            Let's look at the three benefits together.
+            <ul>
+                <li>
+                    <strong>1. Weight control</strong><br>
+                    Nutritionists and other experts point out that eating Greek yogurt helps you lose weight. Greek
+                    yogurt with high protein content.
+                    If you eat regularly, you'll feel full for a long time, so you can eat snacks or binge-eat.
+                    This is because the risk is reduced. This is why Greek yogurt is widely loved by people who advocate
+                    a "healthy diet."
+                </li>
+                <li>
+                    <strong>2. Increase immune power through intestinal health</strong><br>
+                    Greece has a multi-purpose biological, which helps overall activities overall activities.Therefore,
+                    we continue to draw a lot
+                    If you eat, it's not good at all of course, it is smooth
+                    You can enjoy insomnia.There is also argued that the improvement of improving skin health and skin
+                    health health.
+                </li>
+                <li>
+                    <strong>3. physical recovery</strong><br>
+                    In the process of recovering muscles, it can help.And the amino acid in the protein of protein
+                    This is because it helps reconstruction and create new muscles cells.
+                    Therefore, it helps add a high-intensity exercise, it helps to add the diet.
+                </li>
+        </div>
+    </center>
+</body>
+
+</html>

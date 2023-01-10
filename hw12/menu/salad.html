@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div.centered1,div.centered2,div.centered3,div.centered4,div.centered5,div.centered6").hide();
+            $("img.i1").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered1").show();
+            });
+            $("img.i1").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered1").hide();
+            });
+            $("img.i2").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered2").show();
+            });
+            $("img.i2").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered2").hide();
+            });
+            $("img.i3").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered3").show();
+            });
+            $("img.i3").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered3").hide();
+            });
+            $("img.i4").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered4").show();
+            });
+            $("img.i4").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered4").hide();
+            });
+            $("img.i5").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered5").show();
+            });
+            $("img.i5").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered5").hide();
+            });
+            $("img.i6").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered6").show();
+            });
+            $("img.i6").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered6").hide();
+            });
+        });
+    </script>
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            font-size:20px;
+            display: inline-block
+        }
+
+        .centered1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .centered2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .centered3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .centered4 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .centered5 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .centered6 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .op {
+            opacity: 0.2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <span style="margin-left:100px">
+        <a href="../hw12.html" style="text-decoration: none; color:black;">home</a> > Menu > Salad
+    </span>
+    <div style="height:30px"></div>
+    <hr align="center" width="65%" size="2px" noshade="noshade" color="green">
+    </hr>
+    <center>
+        <h1 style="color:green">Salad</h1>
+    </center>
+    <hr align="center" width="65%" size="2px" noshade="noshade" color="green">
+    </hr>
+    <div>
+        <center>
+            <span class="container">
+                <img src="../img/salad5.jpg" style="width:250px" class="i1">
+                <div class="centered1">Brunch salad</div>
+            </span>
+        </center>
+    </div>
+    <div>
+        <center>
+            <span class="container">
+                <img src="../img/salad1.png" style="width:200px" class="i2">
+                <div class="centered2">Meat noodle salad</div>
+            </span>
+            <span class="container">
+                <img src="../img/salad2.png" style="width:200px" class="i3">
+                <div class="centered3">Cheese fruits salad</div>
+            </span>
+            <span class="container">
+                <img src="../img/salad3.png" style="width:200px" class="i4">
+                <div class="centered4">Salmon salad</div>
+            </span>
+        </center>
+
+    </div>
+    <div>
+        <center>
+            <span class="container">
+                <img src="../img/salad4.jpg" style="width:200px" class="i5">
+                <div class="centered5">Citron salad</div>
+            </span>
+            <span class="container">
+                <img src="../img/salad6.png" style="width:200px" class="i6">
+                <div class="centered6">tangerine salad</div>
+            </span>
+        </center>
+    </div>
+
+
+</body>
+
+</html>

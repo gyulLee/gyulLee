@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../jquery-3.6.3.js"></script>
+    <style>
+        body {
+            background-image: url("./img/back.png");
+        }
+
+        .box::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Opera*/
+        }
+
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn_icon {
+            font-family: 'Material Icons';
+        }
+
+        .dropbtn {
+            border: 1px solid white;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+            font-weight: 400;
+            color: rgb(37, 37, 37);
+            padding: 12px;
+            width: 200px;
+            text-align: left;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            /*다른 요소들보다 앞에 배치*/
+            font-weight: 400;
+            background-color: #f9f9f9;
+            min-width: 200px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            text-decoration: none;
+            color: rgb(37, 37, 37);
+            font-size: 12px;
+            padding: 12px 20px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ececec
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        iframe {
+            width: 100%;
+            height: 900px;
+            background-color: white;
+        }
+    </style>
+
+
+</head>
+
+<body class="box">
+    <center><a href="hw12.html"><img src="./img/로고.png" width="300px" height="100px" style="padding:50px"></a></center>
+    <center>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span>
+                    <center class="dropbtn_icon">About us</center>
+                </span>
+            </button>
+            <div class="dropdown-content">
+                <a href="./about us/intro.html" target="if_a">Intro</a>
+                <a href="./about us/brand_story.html" target="if_a">Brand story</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span>
+                    <center class="dropbtn_icon">Menu</center>
+                </span>
+            </button>
+            <div class="dropdown-content">
+                <a href="./menu/yogurt.html" target="if_a">Yogurt</a>
+                <a href="./menu/juice.html" target="if_a">Juice</a>
+                <a href="./menu/salad.html" target="if_a">Salad</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span>
+                    <center class="dropbtn_icon">Shop</center>
+                </span>
+            </button>
+            <div class="dropdown-content">
+                <a href="./shop/shop.html" target="if_a">Shop</a>
+                <a href="./shop/notice.html" target="if_a">Notice</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span>
+                    <center class="dropbtn_icon">Franchise</center>
+                </span>
+            </button>
+            <div class="dropdown-content">
+                <a href="./franchise/howto.html" target="if_a">가맹 정보</a>
+                <a href="franchise/brand.html" target="if_a">브랜드 경쟁력</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span>
+                    <center class="dropbtn_icon">Contact</center>
+                </span>
+            </button>
+            <div class="dropdown-content">
+                <a href="./contact/FaQ.html" target="if_a">FaQ</a>
+                <a href="./contact/QnA.html" target="if_a">QnA</a>
+            </div>
+        </div>
+    </center>
+    <center>
+        <div>
+            <iframe src="./home_basic.html" name="if_a" frameborder="0"></iframe>
+        </div>
+    </center>
+
+</body>
+
+</html>

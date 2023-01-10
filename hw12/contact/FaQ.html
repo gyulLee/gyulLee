@@ -1,0 +1,117 @@
+<head>
+    <span style="margin-left:100px">
+        <a href="../hw12.html" style="text-decoration: none; color:black;">home</a> > Contact > FaQ
+    </span><br>
+    <script src="../jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*FaQ 1번*/
+            $("#panel").click(function () {
+                $("#panel").slideUp("fast");
+            });
+            $("#flip").click(function () {
+                $("#panel").slideToggle("fast");
+                $("#panel1, #panel2, #panel3, #panel4").slideUp("fast");
+            });
+            /*FaQ 2번*/
+            $("#panel1").click(function () {
+                $("#panel1").slideUp("fast");
+            });
+            $("#flip1").click(function () {
+                $("#panel1").slideToggle("fast");
+                $("#panel, #panel2, #panel3, #panel4").slideUp("fast");
+            });
+            /*FaQ 3번*/
+            $("#panel2").click(function () {
+                $("#panel2").slideUp("fast");
+            });
+            $("#flip2").click(function () {
+                $("#panel2").slideToggle("fast");
+                $("#panel, #panel1, #panel3, #panel4").slideUp("fast");
+            });
+            /*FaQ 4번*/
+            $("#panel3").click(function () {
+                $("#panel3").slideUp("fast");
+            });
+            $("#flip3").click(function () {
+                $("#panel3").slideToggle("fast");
+                $("#panel, #panel1, #panel2, #panel4").slideUp("fast");
+            });
+            /*FaQ 5번*/
+            $("#panel4").click(function () {
+                $("#panel4").slideUp("fast");
+            });
+            $("#flip4").click(function () {
+                $("#panel4").slideToggle("fast");
+                $("#panel, #panel1, #panel2, #panel3").slideUp("fast");
+            });
+        });
+    </script>
+    <style>
+        #panel,
+        #flip,
+        #panel1,
+        #flip1,
+        #panel2,
+        #flip2,
+        #panel3,
+        #flip3,
+        #panel4,
+        #flip4 {
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            border-top: solid 1px #c3c3c3;
+        }
+        .b:hover {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #panel,
+        #panel1,
+        #panel2,
+        #panel3,
+        #panel4 {
+            padding: 70px;
+            display: none;
+            background-color: rgb(220, 220, 220);
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h4 style="color:gray">총 5건</h4>
+    <div id="flip" style="padding:20px 30px 20px" class="b">Q. 가맹점 직원을 본사에서 채용하나요?</div>
+    <div id="panel">홀 운영직원과 아르바이트는 점주님께서 직접 채용하셔야 합니다. 또한 점포 규모에 따라 본부에서 적정 직원 및
+        아르바이트 수를 제안해 드립니다.
+    </div>
+
+    <div id="flip1" style="padding:20px 30px 20px" class="b">Q. 매장 운영 시간은 어떻게 되나요?</div>
+    <div id="panel1">투썸플레이스의 영업시간은 07:00~23:00으로 정해져 있으나, 상권의 특성에 따라 운영시간은 조절 가능하며, 
+        운영시간의 조정은 본사와의 협의 후 변경 가능합니다.
+    </div>
+
+    <div id="flip2" style="padding:20px 30px 20px" class="b">Q. 개설 시 본사의 오픈지원 어떻게 되나요?</div>
+    <div id="panel2">가맹점 오픈 시 오픈 초반 매장이 안정적으로 운영될 수 있도록 관리지원 해드립니다.
+    </div>
+
+    <div id="flip3" style="padding:20px 30px 20px" class="b">Q. 인테리어 공사는 본사를 통해서 해야 하나요?</div>
+    <div id="panel3">인테리어 공사는 본사의 협력업체와 공개입찰을 통해 선정되어 지원센터의 감독하에 진행하게 됩니다. 
+        점주님께서 직접 공사하는 것도 가능하나 투썸플레이스 전 매장과의 통일성을 위해 지원센터의 감독를 받으셔야 하며, SI관리비가 청구됩니다. 
+        업체 선정은 복수 업체의 공개입찰 방식이며, 계약은 점주님과 공사업체가 직접하는 것이고 감독은 본사가 직접합니다.
+    </div>
+
+    <div id="flip4" style="padding:20px 30px 20px; border-top: solid 1px #c3c3c3; border-bottom: solid 1px #c3c3c3;" class="b">
+        Q. 가맹점을 창업하고 싶은데 어떻게 해야 하나요?</div>
+    <div id="panel4">점포가 있으신 경우 담당자에게 점포 위치와 연락처를 알려주시면 현장에서 상권 및 시장조사를 통하여 창업여부를 상담하여 
+        드립니다. 점포가 없으신 경우 본사 또는 현장에서 담당자에게 신청서를 작성하여 창업상담을 받으실 수 있으며, 
+    </div><br>
+    <center>
+        <button onclick="alert('첫 페이지 입니다.')" style="border:none;">&lt;</button> 1 
+        <button onclick="alert('마지막 페이지 입니다.')" style="border:none;">></button>
+    </center>
+</body>

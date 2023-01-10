@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <span style="margin-left:100px">
+        <a href="../hw12.html" style="text-decoration: none; color:black;">home</a> > Menu > Juice
+    </span>
+    <meta charset="UTF-8">
+    <script src="../jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#notice").hide();
+            /*보편적인 사진*/
+            $("img.p1").mouseenter(function () {
+                $(this).animate({
+                    height: '110px', width: '110px'
+                });
+            });
+            $("img.p1").mouseleave(function () {
+                $(this).animate({
+                    height: '100px', width: '100px'
+                });
+            });
+            /*감*/
+            $("img.p2").mouseenter(function () {
+                $(this).animate({
+                    height: '110px', width: '143px'
+                });
+            });
+            $("img.p2").mouseleave(function () {
+                $(this).animate({
+                    height: '100px', width: '130px'
+                });
+            });
+            /*참외*/
+            $("img.p1_1").mouseenter(function () {
+                $("#notice").show();
+                $(this).animate({
+                    height: '110px', width: '110px'
+                });
+            });
+            $("img.p1_1").mouseleave(function () {
+                $("#notice").hide();
+                $(this).animate({
+                    height: '100px', width: '100px'
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <img src="../img/juice.png" style="float:right; width:200px">
+    <div style="height: 200px"></div>
+    <center>
+        <h1 style="color:rgb(255, 182, 45);">T a n g e r i n e' s <br> J u i c e</h1>
+    </center>
+    <div style="height:100px"></div>
+    <center><p style="color:rgb(245, 171, 12)">당신을 위한 건강하고 맛있는 쥬스 한 잔</p></center>
+    <center><p style="color:rgb(245, 171, 12)">오늘의 맛을 골라보세요</p></center>
+
+    <center>
+        <img src="../img/토마토.png" class="p1" width="100px" width="100px">
+        <img src="../img/감.png" class="p2" width="100px" width="130px">
+        <img src="../img/참외.png" class="p1_1" width="100px" width="100px"><br>
+        <center><h6 id="notice">참외는 여름 한정 메뉴입니다!</h6></center>
+        <img src="../img/오렌지.jpg" class="p1" width="100px" width="100px">
+        <img src="../img/수박.png" width="100px" width="130px">
+        <img src="../img/배.png" class="p1" width="100px" width="100px"><br>
+        <img src="../img/사과.jpg" class="p1" width="100px" width="100px">
+        <img src="../img/바나나.png" class="p1" width="100px" width="100px">
+        <img src="../img/딸기.png" class="p1" width="100px" width="100px">
+    </center>
+
+
+</body>
+
+</html>

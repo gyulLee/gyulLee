@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div.centered1,div.centered2,div.centered3,div.centered4").hide();
+            $("img.i1").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered1").show();
+            });
+            $("img.i1").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered1").hide();
+            });
+            $("img.i2").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered2").show();
+            });
+            $("img.i2").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered2").hide();
+            });
+            $("img.i3").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered3").show();
+            });
+            $("img.i3").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered3").hide();
+            });
+            $("img.i4").mouseenter(function() {
+                $(this).addClass("op");
+                $("div.centered4").show();
+            });
+            $("img.i4").mouseleave(function() {
+                $(this).removeClass("op");
+                $("div.centered4").hide();
+            });
+        });
+    </script>
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            font-size:20px;
+            display: inline-block
+        }
+
+        .centered1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .centered2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .centered3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .centered4 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .op {
+            opacity: 0.2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <span style="margin-left:100px">
+        <a href="../hw12.html" style="text-decoration: none; color:black;">home</a> > Menu > Yogurt
+    </span>
+    <div style="height:30px"></div>
+    <hr align="center" width="65%" size="2px" noshade="noshade" color="green">
+    </hr>
+    <center>
+        <h1 style="color:green">Yogurt</h1>
+    </center>
+    <hr align="center" width="65%" size="2px" noshade="noshade" color="green">
+    </hr>
+    <div>
+        <center>
+            <span class="container">
+                <img src="../img/yogurt1.png" style="width:140px; padding-bottom:1px" class="i1">
+                <div class="centered1">Mix berry</div>
+            </span>
+            <span class="container">
+                <img src="../img/yogurt.jpg" style="width:120px; padding-left:16px" class="i2">
+                <div class="centered2">Strawberry</div>
+            </span>
+            <span class="container">
+                <img src="../img//yogurt3.png" style="width:160px" class="i3">
+                <div class="centered3">Plane</div>
+            </span>
+            <span class="container">
+                <img src="../img/yogurt4.png" style="width:140px" class="i4">
+                <div class="centered4">Nuts with fruits</div>
+            </span>
+        </center>
+    </div>
+    <center><p style="color:rgb(38, 120, 38)">find your favorite!</p></center>
+
+</body>
+
+</html>
